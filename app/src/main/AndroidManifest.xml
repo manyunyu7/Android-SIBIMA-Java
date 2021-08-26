@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.senjapagi.sibimamobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".mentor_intro_kelompok"></activity>
+        <activity android:name=".Admin.admin_update_helpdesk" />
+        <activity android:name=".Admin.admin_manage_contact" />
+        <activity android:name=".mentor_qrcode" />
+        <activity android:name=".Admin.admin_scanQR_talaqqi" />
+        <activity android:name=".Admin.admin_scanQR" />
+        <activity android:name=".dashboard_admin" />
+        <activity android:name=".ActivityMentee.mentee_helpdesk" />
+        <activity android:name=".mentee_upload_izin" />
+        <activity android:name=".website_sibima" />
+        <activity android:name=".website_sibima_mentor" />
+        <activity android:name=".ActivityMentee.mentee_settings" />
+        <activity android:name=".ActivityMentee.mentee_helpdesk_and_perizinan" />
+        <activity android:name=".dashboard_mentor" />
+        <activity android:name=".ActivityMentee.mentee_lihat_kelompok" />
+        <activity android:name=".ActivityMentee.mentee_lihat_nilai" />
+        <activity android:name=".ActivityMentee.mentee_buku_panduan" />
+        <activity android:name=".ActivityMentee.mentee_qrcode" />
+        <activity android:name=".mentor_buku_panduan" />
+        <activity android:name=".mentor_lihat_kelompok" />
+        <activity android:name=".mentor_settings" />
+        <activity android:name=".dashboard_mentee" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
